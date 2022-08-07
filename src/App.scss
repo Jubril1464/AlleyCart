@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$color-light-slate: #94a3b8;
+$color-slate: #64748b;
+$font-color: #6b7280;
+$btn-color:#e5e5e5;
+$color-grey:#e5e7eb;
+
+
+body {
+  font-size: 61%;
+  line-height: 1.2;
+  
+}
+.margin-bottom-medium{
+  margin-bottom: 2rem;
+}
+.margin-bottom-big{
+  margin-bottom: 4rem;
+}
+.u-center-margin{
+  margin: 0 auto;
+}
+.u-center-text{
+  text-align: center;
+}
+.heading--primary{
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  
+}
+.heading--tertiary{
+  font-size: 1.5rem ;
+  letter-spacing: 1rem;
+  font-family: Gentium Book Plus;
+}
+
+.paragraph{
+  font-size: 1.2rem;
+  
+}
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  
+}
+
+

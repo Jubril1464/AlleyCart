@@ -1,0 +1,73 @@
+@import "../App.scss";
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid $color-slate;
+
+  .nav__logo {
+    margin-left: 1rem;
+
+    &--text {
+      font-size: 2rem;
+      & > span {
+        display: inline-block;
+        padding: 0.3rem 0.7rem;
+        background-color: $color-light-slate;
+        transform: skewY(-10deg);
+      }
+    }
+  }
+  .nav__menu {
+     
+    margin-right: 2rem;
+    cursor: pointer;
+    &--items {
+      display: inline-block;
+      font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+       
+
+        
+      
+    }
+   
+    .sign-In {
+      border-radius: 100px;
+      background-color: $color-light-slate;
+      // padding: 0.5rem 1rem;
+    
+      padding-bottom: .7rem;
+    
+    }
+  }
+  .searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    &__input{
+      padding: .5rem .7rem;
+      border-radius: 100px;
+      border: none;
+      background-color: rgba(128, 128, 128, 0.464);
+      width: 60%;
+      transition: all 0.3s;
+
+      
+
+      
+      
+      &:focus{
+        outline: none;
+        width: 70%;
+      }
+    }
+    &__icon{
+      font-size: 1.2rem;
+      color: rgba(128, 128, 128, 0.464);
+      margin-left: -2rem;
+    }
+  }
+}

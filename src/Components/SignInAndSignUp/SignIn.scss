@@ -1,0 +1,60 @@
+@import '/src/App.scss';
+.signContainer{
+     height: 100vh;
+  @include flexCenter(row);
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6) ),
+    url(../../Assets/Others/photo15.jpg) ;
+  
+
+  background-position: center;
+  background-size: cover;
+}
+.signIn{
+    padding: 2rem 1.5rem;
+    background-color: rgba(0,0,0,.3);
+    // box-shadow: .7rem .7rem 1rem rgba(0,0,0,.3);
+    // border: 1px solid $color-light-slate;
+    border-radius: 5px;
+    &__form{
+        text-align: center;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .login--btn{
+        background:linear-gradient(to right, rgba($color-light-slate, .3), rgba($color-slate, .3));
+        border-radius: 3px;
+        // &:not(:last-child){
+        //     margin-right: 2rem;
+        // }
+        &:hover{
+            background: linear-gradient(to right, $color-light-slate, $color-slate);
+        }
+      
+    }
+    .google-sign-in{
+        &:hover{
+            background:#357ae8 !important;
+        }
+    }
+    .account{
+        font-size: 1rem;
+        color: #fff;
+        margin-top: 1rem;
+        display: inline-block;
+          
+        &__link:visited, &__link:link{
+            color: inherit;
+            
+        }
+    }
+  
+   
+    
+}

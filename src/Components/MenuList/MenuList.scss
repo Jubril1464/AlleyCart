@@ -1,0 +1,15 @@
+@import "/src/App.scss";
+.menulist__container {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .content {
+    padding: 1rem 1rem;
+    background-color: $color-slate;
+    font-family: Arima;
+    font-size: .8rem;
+  }
+}
