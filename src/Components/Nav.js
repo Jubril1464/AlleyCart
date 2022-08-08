@@ -56,7 +56,7 @@ function Nav() {
           </Link>
         )}
       </ul>
-      <CartDropdown />
+      {/* <CartDropdown /> */}
     </div>
   )
 }
