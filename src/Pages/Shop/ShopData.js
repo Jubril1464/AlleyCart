@@ -53,7 +53,7 @@ const Shop_Data = [
     routeName: "hats",
     items: [
       {
-        id: 1,
+        id: 12,
         name: "Brim-Brown",
         imageURL: img1,
         price: 25,
@@ -61,7 +61,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 2,
+        id: 23,
         name: "Blue Beanie",
         imageURL: img2,
         price: 20,
@@ -69,7 +69,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 3,
+        id: 33,
         name: "Blue Snapback",
         imageURL: img3,
         price: 15,
@@ -77,7 +77,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 4,
+        id: 42,
         name: "Green Beanie",
         imageURL: img4,
         price: 20,
@@ -85,7 +85,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 5,
+        id: 51,
         name: "Brown Cowboy",
         imageURL: img5,
         price: 25,
@@ -93,7 +93,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 6,
+        id: 60,
         name: "Grey Brim",
         imageURL: img6,
         price: 25,
@@ -101,7 +101,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 5,
+        id: 59,
         name: "Palm Tree",
         imageURL: img7,
         price: 25,
@@ -109,7 +109,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 6,
+        id: 73,
         name: "Red Beanie",
         imageURL: img8,
         price: 25,
@@ -117,7 +117,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 5,
+        id: 95,
         name: "Wolf Cap",
         imageURL: img9,
         price: 25,
@@ -127,12 +127,12 @@ const Shop_Data = [
     ],
   },
   {
-    id: 2,
+    id: 92,
     title: "Jackets",
     routeName: "jackets",
     items: [
       {
-        id: 1,
+        id: 71,
         name: "Black Shearling",
         imageURL: img10,
         price: 25,
@@ -140,7 +140,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 2,
+        id: 22,
         name: "Blue Jean-Jacket",
         imageURL: img11,
         price: 25,
@@ -148,7 +148,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 3,
+        id: 23,
         name: "Brown Shearling",
         imageURL: img12,
         price: 25,
@@ -156,7 +156,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 4,
+        id:124,
         name: "Brown Trench",
         imageURL: img13,
         price: 25,
@@ -164,7 +164,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 5,
+        id: 501,
         name: "Grey Jean-Jacket",
         imageURL: img14,
         price: 25,
@@ -174,12 +174,12 @@ const Shop_Data = [
     ],
   },
   {
-    id: 3,
+    id: 311,
     title: "Mens",
     routeName: "mens",
     items: [
       {
-        id: 1,
+        id: 100,
         name: "Camo Vest",
         imageURL: img15,
         price: 25,
@@ -187,7 +187,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 2,
+        id: 223,
         name: "Floral Shirt",
         imageURL: img16,
         price: 25,
@@ -195,7 +195,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 3,
+        id: 376,
         name: "Long Sleeve",
         imageURL: img17,
         price: 25,
@@ -203,7 +203,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 4,
+        id: 498,
         name: "Pink Shirt",
         imageURL: img18,
         price: 25,
@@ -211,7 +211,7 @@ const Shop_Data = [
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       },
       {
-        id: 5,
+        id: 509,
         name: "Polka Dot Shirt",
         imageURL: img19,
         price: 25,

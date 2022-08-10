@@ -5,17 +5,18 @@
      background-color: whitesmoke;
      box-shadow: 0 1rem 1rem rgba(0,0,0,.2);
      padding: 1rem 1rem;
-     border-radius: 10px;
+     border-radius: 0;
      justify-content: space-between;
      width: 20rem;
      transition: all .3s;
+     
      
   &:not(:last-child){
    margin-bottom: 1rem;
   }
     
     &:hover{
-      box-shadow: 0 1.5rem 1.5rem rgba(0,0,0,.4);
+      box-shadow: 0 1.5rem 1.5rem rgba(0,0,0,.2);
       
     }
    
@@ -42,9 +43,8 @@
       align-self: flex-end;
       width: 45%;
       margin-top: 1rem;
-      transition: all .3s;
       &:hover{
-         background-color: $color-light-slate;
+         background-color: $color-light-slate !important;
 
       }
      }

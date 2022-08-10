@@ -1,7 +1,6 @@
 import React from "react"
 import "./Nav.scss"
 import { AiOutlineSearch } from "react-icons/ai"
-import { GiShoppingCart } from "react-icons/gi"
 import { Link, useNavigate } from "react-router-dom"
 import { useUserAuth } from "../context/userAuthContext"
 import CartIcon from "./cart-icon/cart-icon"
