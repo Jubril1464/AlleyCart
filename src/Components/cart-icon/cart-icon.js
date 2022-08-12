@@ -4,13 +4,15 @@ import { ReactComponent as ShoppingIcon } from "../../Assets/shopping-bag.svg"
 import  {toggleCartHidden}  from "../../Redux/cart/cart.actions"
 import "./cart-icon.scss"
 import { useSelector, useDispatch } from "react-redux/es/exports"
+import { isEditable } from "@testing-library/user-event/dist/utils"
 const CartIcon = () => {
-  const icon = useSelector(state => console.log(state.cartIcon))
+  const total = useSelector(state => state.cartIcon.cartItems);
+  const itemCount = total.reduce((accumulatedQuantity, cartItems) => (accumulatedQuantity + cartItems.quantity),0)
   const dispatch = useDispatch()
   return (
     <div className="cart-icon" onClick={() => dispatch(toggleCartHidden())}>
       <ShoppingIcon className="shopping-icon" />
-      <span className="item-count">0</span>
+      <span className="item-count">{itemCount}</span>
       
     </div>
   )
