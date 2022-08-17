@@ -10,6 +10,7 @@ import SignUp from "./Components/SignInAndSignUp/SignUp"
 import ProtectedRoute from "./Components/ProtectedRoute"
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Checkout from "./Pages/Checkout/Checkout"
 function App() {
   return (
     <div className="App">
@@ -35,6 +36,7 @@ function App() {
               </ProtectedRoute>
             }
           />
+         <Route exact path="/checkout" element={<Checkout></Checkout>}></Route>
         </Routes>
       </UserAuthContextProvider>
       <ToastContainer />

@@ -35,9 +35,18 @@ function Nav() {
         <AiOutlineSearch className="searchbar__icon" />
       </div>
       <ul className="nav__menu">
-        <li className="nav__menu--items">Shop</li>
-        <li className="nav__menu--items">Contact</li>
-        <li className="nav__menu--items">Checkout</li>
+        <Link to="/shop">
+          {" "}
+          <li className="nav__menu--items">Shop</li>{" "}
+        </Link>
+        <Link to="/contact">
+          {" "}
+          <li className="nav__menu--items">Contact</li>{" "}
+        </Link>
+        <Link to='/checkout'>
+          {" "}
+          <li className="nav__menu--items">Checkout</li>{" "}
+        </Link>
         <li className="nav__menu--items">
           <CartIcon />
           {/* My Cart{" "}
