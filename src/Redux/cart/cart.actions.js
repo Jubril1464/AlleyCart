@@ -11,5 +11,11 @@ export const addItem = (item) => {
 
   }
 }
+export const clearItemFromCart = (item) => {
+  return {
+    type: CartActionTypes.CLEAR_ITEM_FROM_CART,
+    payload: item
+  }
+}
 
 /// Action is a function that returns an object
