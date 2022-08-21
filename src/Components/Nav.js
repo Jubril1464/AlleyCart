@@ -43,16 +43,12 @@ function Nav() {
           {" "}
           <li className="nav__menu--items">Contact</li>{" "}
         </Link>
-        <Link to='/checkout'>
+        <Link to="/checkout">
           {" "}
           <li className="nav__menu--items">Checkout</li>{" "}
         </Link>
         <li className="nav__menu--items">
-          <CartIcon />
-          {/* My Cart{" "}
-          <span>
-            <GiShoppingCart className="cart--icon"></GiShoppingCart>
-          </span> */}
+          <CartIcon  />
         </li>
         {user ? (
           <li className="nav__menu--items sign-In" onClick={handleLogOut}>

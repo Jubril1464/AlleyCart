@@ -1,3 +1,4 @@
+@import '/src/App.scss';
 .checkout-item {
   width: 100%;
   display: flex;
@@ -27,6 +28,13 @@
     margin-left: 2rem;
     .arrow{
       cursor: pointer;
+      background-color: $color-slate;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: .2rem;
+      border-radius: 3px;
+      
     }
     .value{
       margin:  0 1rem;
