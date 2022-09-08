@@ -3,16 +3,27 @@
   display: flex;
   gap: 2rem;
   justify-content: center;
+  flex-wrap: wrap;
+
 
   .item__container {
     position: relative;
     background-color:$color-light-slate;
     padding: 2rem 1.5rem;
     border-radius: 5px;
+    @include respond (phone) {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
 
     .item__img {
-      width: 350px;
-      height: 300px;
+      width: 35rem;
+      height: 30rem;
+     @include respond (tab-port) {
+      width: 20rem;
+      height: 15rem;
+     }
     }
     .item__percent {
       position: absolute;
@@ -22,7 +33,7 @@
       transform: skewY(-20deg);
     }
     .item__text {
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-weight: 100;
     }
     .item__price{
@@ -40,6 +51,7 @@
       transform-origin: top;
       z-index: 1;
       border-radius: 5px;
+      
       &:hover{
         background-color: $color-light-slate;
       }

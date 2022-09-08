@@ -1,0 +1,20 @@
+import React from "react"
+import { useSelector } from "react-redux/es/exports"
+import CollectionPreview from "../../Components/Collection-Preview/CollectionPreview"
+
+const Girls = () => {
+  const selector = useSelector((state) => state.shop.collections)
+  const filtered = selector.filter((items) => items.routeName === "girls")
+  console.log(filtered)
+  return (
+    <div className="girs">
+      <div className="girls__container">
+        {filtered.map(({ id, ...otherProps }) => (
+          <CollectionPreview key={id} {...otherProps} />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default Girls

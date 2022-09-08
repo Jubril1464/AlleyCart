@@ -41,8 +41,10 @@
      }
      .addBtn{
       align-self: flex-end;
-      width: 45%;
+      width: 50%;
       margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #fff;
       &:hover{
          background-color: $color-light-slate !important;
 

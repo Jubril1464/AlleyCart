@@ -1,37 +1,55 @@
-@import '/src/App.scss';
-.checkout{
-    position: relative;
-    .back-icon{
-        position: absolute;
-        top: 0;
-        left: 1rem;
-        font-size: 2rem;
-        cursor: pointer;
-
+@import "/src/App.scss";
+.checkout {
+  overflow: none;
+  position: relative;
+  text-align: center;
+  .back-icon {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    @include respond(phone) {
+      top: -2rem;
     }
-    &__container{
+  }
+  &__container {
+   width: 50%;
     display: flex;
     flex-direction: column;
-    width: 50%;
     align-items: center;
     justify-content: center;
     margin: 3rem auto;
     font-size: 1rem;
-}
-&__header{
+    @include respond(phone) {
+      width: 70%;
+
+    }
+   
+  }
+  &__header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    &--element{
-        padding: .7rem 2rem;
-        background-color: $color-slate;
-        border-radius: 1.5rem;
-       
+     @include respond(phone) {
+      // display: inline-block
     }
-}
-&__total{
-    font-size: 2rem;
+    &--element {
+      padding: 0.7rem 2rem;
     
-}
-
+      border-radius: 1.5rem;
+     
+       @include respond(phone) {
+   display: inline-block;
+   padding: 0;
+    }
+    }
+  }
+  &__total {
+    font-size: 2rem;
+  }
+  .test-warning{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }

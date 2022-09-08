@@ -1,11 +1,16 @@
 import React from 'react'
 import CollectionItem from '../CollectionItem/CollectionItem'
 import './CollectionPreview.scss'
+import {useParams} from 'react-router-dom'
 
-const CollectionPreview = ({title, items}) => {
+const CollectionPreview = ({ title, items }) => {
+ 
+  
+  
   return (
+  
       <div className='collection-preview'>
-          <h1 className="collection-preview__title">{title.toUpperCase()}</h1>
+          <h1 className="collection-preview__title">{title}</h1>
           <div className="collection-preview__preview">
               {items.filter((items, idx) => idx < 7)
                   .map((item) => (

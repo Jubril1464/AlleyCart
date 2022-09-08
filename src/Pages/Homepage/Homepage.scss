@@ -5,7 +5,7 @@
     justify-content: center;
     padding-bottom: 1rem;
 
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: $font-color;
     margin-top: 0.8rem;
     border-bottom: 1px solid $color-slate;
@@ -38,6 +38,12 @@
         display: block;
         box-sizing: border-box;
         transition: all 0.3s;
+        @include respond (tab-port) {
+          font-size: 1.5rem;
+        }
+        @include respond (phone) {
+          padding: 0.8rem .6rem;
+        }
       }
       .items {
         background: $color-slate;
@@ -70,7 +76,7 @@
           padding: 0.5rem 1rem;
           text-decoration: none;
           transition: all 0.2s;
-          font-size: 0.7rem;
+          font-size: 1.3rem;
 
           &:hover {
             border-left: 2px solid #fff;
@@ -101,6 +107,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    text-align: center;
 
     a:visited,
     a:link {
@@ -110,7 +118,7 @@
     .btn{
       padding: .5rem 2rem;
       background-color: $btn-color;
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: #000;
       border-radius: 100px;
 

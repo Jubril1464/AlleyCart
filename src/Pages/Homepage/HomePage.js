@@ -7,7 +7,7 @@ import Directory from "../../Components/Directory/Directory"
 function Homepage() {
   return (
     <div className="home__container">
-      <div className="items__container">
+      {/* <div className="items__container">
         <div className="dropdown">
           <span className="label"> Home</span>
         </div>
@@ -71,7 +71,7 @@ function Homepage() {
         <div className="dropdown">
           <span className="label">My Account</span>
         </div>
-      </div>
+      </div> */}
       <main className="home-main">
         <h3 className="heading--tertiary margin-bottom-medium">
           Save up to 75% in our store 🔏

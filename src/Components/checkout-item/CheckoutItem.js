@@ -23,7 +23,7 @@ const CheckoutItem = ({ cartItems  }) => {
         <div className="arrow" onClick={() => dispatch(addItem(cartItems))}><AiOutlinePlus /></div>
       </span>
 
-      <span className="price">{price}</span>
+      <span className="price">${price}</span>
       <div
         className="remove-btn"
         onClick={() => dispatch(clearItemFromCart(cartItems))}

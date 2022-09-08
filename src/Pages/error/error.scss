@@ -1,0 +1,10 @@
+@import '/src/App.scss';
+.errorContainer{
+    height: 100vh;
+    @include flexCenter('row');
+    h1{
+        font-size: 4rem;
+        
+    }
+  
+}

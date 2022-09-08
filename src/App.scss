@@ -5,15 +5,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+@mixin respond($breakpoint) {
+ @if $breakpoint == phone {
+  @media (max-width: 37.5em) {@content}; //// 600px
+ }
+ @if $breakpoint == tab-port {
+  @media (max-width : 56.25em) {@content} ; //// 900px
+ }
+ @if $breakpoint == tab-land {
+  @media (max-width : 75em) {@content} ; //// 1200px
+ }
+ @if $breakpoint == big-desktop {
+  @media (min-width : 112.5em) { @content} ; //// 1800+
+ }
+}
 $color-light-slate: #94a3b8;
 $color-slate: #64748b;
 $font-color: #6b7280;
 $btn-color:#e5e5e5;
 $color-grey:#e5e7eb;
-
+html {
+  font-size: 62.5%;
+  @include respond(tab-land) {
+    font-size: 55%;
+  }
+  @include respond(tab-port) {
+    font-size: 52%;
+  }
+}
 
 body {
-  font-size: 61%;
+  
   line-height: 1.2;
   
 }
@@ -47,7 +69,7 @@ body::-webkit-scrollbar-thumb{
   
 }
 .heading--tertiary{
-  font-size: 1.5rem ;
+  font-size: 2rem ;
   letter-spacing: 1rem;
   font-family: Gentium Book Plus;
 }
@@ -63,5 +85,19 @@ body::-webkit-scrollbar-thumb{
   flex-direction: $direction;
   
 }
+//// MEDIA QUERY MANANGER
+/// 0 - 600px : phone
+/// 600px - 900px : Tablet portrait
+/// 900px - 1200px : Tablet Landscape
+/// [1200px - 1800] is where our normal styles apply
+/// 1800px + : Big desktop
+// $breakpoint argument choices 
+//  -phone
+// -tab-port
+// - tab-land
+// - big desktop
+// 1em = 16px
+
+
 
 

@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import { BsArrowLeft } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
 import CheckoutItem from '../../Components/checkout-item/CheckoutItem'
+import StripeButton from '../../Components/stripe-button/StripeButton'
 
 
 const Checkout = () => {
@@ -43,6 +44,12 @@ const Checkout = () => {
             ${total}</span>
         </div>
       </div>
+      <div className="test-warning">
+        <p>* Use default Card Number * : 4242-4242-4242-4242</p>
+        <p>* Expiry Date * : Any Future Date</p>
+        <p>* CVV * : 123</p>
+      </div>
+      <StripeButton price={total}/>
     </div>
   )
 }

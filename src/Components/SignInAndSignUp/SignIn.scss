@@ -13,13 +13,16 @@
   background-size: cover;
 }
 .signIn{
-    padding: 2rem 1.5rem;
+    padding: 5rem 5rem;
     background-color: rgba(0,0,0,.3);
     // box-shadow: .7rem .7rem 1rem rgba(0,0,0,.3);
     // border: 1px solid $color-light-slate;
     border-radius: 5px;
+    color: #fff;
+   
     &__form{
         text-align: center;
+        
     }
     .buttons{
         display: flex;
@@ -33,18 +36,20 @@
         // &:not(:last-child){
         //     margin-right: 2rem;
         // }
+        color: #fff;
         &:hover{
             background: linear-gradient(to right, $color-light-slate, $color-slate);
         }
       
     }
     .google-sign-in{
+        color: #fff;
         &:hover{
             background:#357ae8 !important;
         }
     }
     .account{
-        font-size: 1rem;
+        font-size: 1.6rem;
         color: #fff;
         margin-top: 1rem;
         display: inline-block;

@@ -12,8 +12,8 @@ function Directory() {
   return (
       <div className='directory__container'>
           {
-              lists.map(({ title, imageURL, size }) => (
-                  <MenuList title={title} imageURL={imageURL} size={ size } />
+              lists.map(({ title, imageURL, size, routeName }) => (
+                  <MenuList title={title} imageURL={imageURL} size={ size } routeName= {routeName} />
               ))
          }
           

@@ -29,27 +29,21 @@ function Nav() {
       <div className="searchbar">
         <input
           type="text"
-          placeholder="Search for what you want..."
+          placeholder="Search..."
           className="searchbar__input"
         />
         <AiOutlineSearch className="searchbar__icon" />
       </div>
       <ul className="nav__menu">
-        <Link to="/shop">
-          {" "}
-          <li className="nav__menu--items">Shop</li>{" "}
-        </Link>
-        <Link to="/contact">
-          {" "}
-          <li className="nav__menu--items">Contact</li>{" "}
-        </Link>
+        
+        
         <Link to="/checkout">
           {" "}
-          <li className="nav__menu--items">Checkout</li>{" "}
+          <li className="nav__menu--items checkout">Checkout</li>{" "}
         </Link>
-        <li className="nav__menu--items">
+        <li className="nav__menu--items cart-icon">
           <CartIcon  />
-        </li>
+        </li> 
         {user ? (
           <li className="nav__menu--items sign-In" onClick={handleLogOut}>
             SignOut

@@ -5,12 +5,18 @@
   padding-top: 1rem;
   padding-bottom: 0.8rem;
   border-bottom: 1px solid $color-slate;
+  margin-bottom: 1.2rem;
+  align-items: center;
 
   .nav__logo {
     margin-left: 1rem;
 
     &--text {
-      font-size: 2rem;
+      font-size: 3rem;
+      @include respond(phone) {
+        font-size: 1.6rem;
+      }
+
       & > span {
         display: inline-block;
         padding: 0.3rem 0.7rem;
@@ -20,55 +26,60 @@
     }
   }
   .nav__menu {
-     
     margin-right: 2rem;
     cursor: pointer;
     &--items {
       display: inline-block;
-      font-size: 1.1rem;
+      color: black;
+      font-size: 2rem;
       padding: 0.5rem 1rem;
-       
-
-        
-      
+      margin-right: 1rem;
+      @include respond(phone) {
+        font-size: 1rem;
+        padding: 0.5rem .7rem;
+        margin-right: .5rem;
+      }
     }
-   
+    .checkout {
+      @include respond (phone) {
+        display: none;
+      }
+    }
+
     .sign-In {
       border-radius: 100px;
-      background-color: $color-light-slate;
-      // padding: 0.5rem 1rem;
-    
-      padding-bottom: .7rem;
-    
+      background: linear-gradient(to right, $color-light-slate, $color-slate);
+      color: #fff;
+      font-size: 1.3rem;
     }
   }
-  .searchbar{
+  .searchbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include respond(phone) {
+      display: none;
+    }
     width: 50%;
-    &__input{
-      padding: .5rem .7rem;
+    &__input {
+      padding: 0.5rem 0.7rem;
       border-radius: 100px;
       border: none;
       background-color: rgba(128, 128, 128, 0.464);
       width: 60%;
       transition: all 0.3s;
 
-      
 
-      
-      
-      &:focus{
+
+      &:focus {
         outline: none;
         width: 70%;
       }
     }
-    &__icon{
+    &__icon {
       font-size: 1.5rem;
       color: rgba(128, 128, 128, 0.464);
       margin-left: -1.9rem;
     }
-    
   }
 }
