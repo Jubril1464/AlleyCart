@@ -6,7 +6,7 @@ import directoryReducer from "./Directory/DirectoryReducer";
 import shopReducer from "./shop/shopReducer";
 
 const persistConfig = {
-    key: 'ro',
+    key: 'roos',
     storage,
     whiteList: ['cartIcon']
 }
